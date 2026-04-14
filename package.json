@@ -1,0 +1,39 @@
+{
+  "name": "saucedemo-playwright",
+  "version": "1.0.0",
+  "description": "Playwright framework with OOP, Desktop, Mobile & Visual Testing against SauceDemo",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:desktop": "cross-env test_env=uiTest npx playwright test --project=chromium",
+    "test:desktop-headed": "cross-env test_env=uiTest npx playwright test --project=chromium --headed",
+    "test:firefox": "cross-env test_env=uiTest npx playwright test --project=firefox --headed",
+    "test:webkit": "cross-env test_env=uiTest npx playwright test --project=webkit --headed",
+    "test:mobile-chrome": "cross-env test_env=uiTest npx playwright test --project=mobile-chrome --headed",
+    "test:mobile-safari": "cross-env test_env=uiTest npx playwright test --project=mobile-safari --headed",
+    "test:visual": "cross-env test_env=uiTest npx playwright test --project=visual",
+    "test:visual-update": "cross-env test_env=uiTest npx playwright test --project=visual --update-snapshots",
+    "test:smoke": "cross-env test_env=uiTest npx playwright test --grep @smoke",
+    "test:regression": "cross-env test_env=uiTest npx playwright test --grep @regression",
+    "test:critical": "cross-env test_env=uiTest npx playwright test --grep @critical",
+    "test:all-parallel": "cross-env test_env=uiTest npx playwright test",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "automation",
+    "pom",
+    "oop"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^20.19.39"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5"
+  }
+}

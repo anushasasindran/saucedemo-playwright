@@ -1,0 +1,22 @@
+{
+  "validInfo": {
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "postalCode": "90210"
+  },
+  "missingFirstName": {
+    "firstName": "",
+    "lastName": "Doe",
+    "postalCode": "90210"
+  },
+  "missingLastName": {
+    "firstName": "Jane",
+    "lastName": "",
+    "postalCode": "90210"
+  },
+  "missingPostalCode": {
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "postalCode": ""
+  }
+}

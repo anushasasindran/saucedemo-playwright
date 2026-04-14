@@ -1,0 +1,27 @@
+{
+  "standard": {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "description": "Normal user with full access"
+  },
+  "locked": {
+    "username": "locked_out_user",
+    "password": "secret_sauce",
+    "description": "User is locked out"
+  },
+  "problem": {
+    "username": "problem_user",
+    "password": "secret_sauce",
+    "description": "User with broken images and glitchy behavior"
+  },
+  "glitch": {
+    "username": "performance_glitch_user",
+    "password": "secret_sauce",
+    "description": "User with artificially slow responses"
+  },
+  "invalid": {
+    "username": "invalid_user",
+    "password": "wrong_password",
+    "description": "Non-existent credentials"
+  }
+}
